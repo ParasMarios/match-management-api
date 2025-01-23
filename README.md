@@ -39,3 +39,6 @@ It includes CRUD operations for Match and MatchOdds entities, integrates with Po
 `mvn clean package -DskipTests`
 ## Run with Docker
 Build and start the application and database containers: `docker-compose up --build`
+## Accessing Swagger
+Once you run the application, open your browser and navigate to:
+- Swagger UI: http://localhost:8080/swagger-ui.html
