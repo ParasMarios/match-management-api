@@ -37,3 +37,7 @@ It includes CRUD operations for Match and MatchOdds entities, integrates with Po
 | PUT         | `/api/match-odds/{id}` | Update existing odds       |
 | DELETE      | `/api/match-odds/{id}` | Delete odds by ID          |
 
+## Build the Application
+`mvn clean package`
+## Run with Docker
+Build and start the application and database containers: `docker-compose up --build`
