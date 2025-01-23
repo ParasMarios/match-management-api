@@ -2,14 +2,12 @@
 ## Overview
 This is a Spring Boot-based REST API for managing sports matches and their odds. 
 It includes CRUD operations for Match and MatchOdds entities, integrates with PostgreSQL, and uses Docker for containerization.
-----------------------
 ## Features
 - Manage Match entities with details like description, date, time, teams, and sport type.
 - Manage MatchOdds entities linked to a Match.
 - Full CRUD operations with REST endpoints.
 - PostgreSQL as the database.
 - Docker support for containerized deployment.
-----------------------
 ## Technologies Used
 - **Java 17**
 - **Spring Boot 3.x**
