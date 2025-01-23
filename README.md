@@ -1,31 +1,33 @@
-REST API for Match Management with Odds
-Overview
-This is a Spring Boot-based REST API for managing sports matches and their odds. It includes CRUD operations for Match and MatchOdds entities, integrates with PostgreSQL, and uses Docker for containerization. The API is documented with Swagger for easy testing and usage.
+# REST API for Match Management with Odds
+## Overview
+This is a Spring Boot-based REST API for managing sports matches and their odds. 
+It includes CRUD operations for Match and MatchOdds entities, integrates with PostgreSQL, and uses Docker for containerization. The API is documented with Swagger for easy testing and usage.
 ----------------------
-Features
-Manage Match entities with details like description, date, time, teams, and sport type.
-Manage MatchOdds entities linked to a Match.
-Full CRUD operations with REST endpoints.
-PostgreSQL as the database.
-Docker support for containerized deployment.
+## Features
+- Manage Match entities with details like description, date, time, teams, and sport type.
+- Manage MatchOdds entities linked to a Match.
+- Full CRUD operations with REST endpoints.
+- PostgreSQL as the database.
+- Docker support for containerized deployment.
 ----------------------
-Technologies Used
-Java 17
-Spring Boot 3.x
-PostgreSQL 15
-Spring Data JPA
-Lombok
-Maven
-Docker & Docker Compose
+## Technologies Used
+- **Java 17**
+- **Spring Boot 3.x**
+- **PostgreSQL 15**
+- **Spring Data JPA**
+- **Lombok**
+- **Maven**
+- **Docker & Docker Compose**
 
-REST API Endpoints
-1. Match Endpoints
-HTTP Method	    Endpoint	        Description
-GET	          /api/matches	      Get all matches
-POST	        /api/matches	      Create a new match
-PUT	          /api/matches/{id}	  Update an existing match
-DELETE	      /api/matches/{id}	  Delete a match by ID
-2. MatchOdds Endpoints
+## REST API Endpoints
+#### **1. Match Endpoints**
+| HTTP Method	  |  Endpoint	           | Description                |
+---------------------------------------------------------------------
+|GET	          | `/api/matches`	     | Get all matches            |
+|POST	          | `/api/matches`	     | Create a new match         |
+|PUT	          | `/api/matches/{id}`	 | Update an existing match   |
+|DELETE	        | `/api/matches/{id}`	 | Delete a match by ID       |
+3. MatchOdds Endpoints
 HTTP Method	    Endpoint	          Description
 GET	          /api/match-odds	      Get all odds
 POST	        /api/match-odds	      Create new odds
