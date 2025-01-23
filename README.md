@@ -19,17 +19,21 @@ It includes CRUD operations for Match and MatchOdds entities, integrates with Po
 - **Maven**
 - **Docker & Docker Compose**
 
-## REST API Endpoints
-#### **1. Match Endpoints**
-| HTTP Method	  |  Endpoint	           | Description                |
----------------------------------------------------------------------
-|GET	          | `/api/matches`	     | Get all matches            |
-|POST	          | `/api/matches`	     | Create a new match         |
-|PUT	          | `/api/matches/{id}`	 | Update an existing match   |
-|DELETE	        | `/api/matches/{id}`	 | Delete a match by ID       |
-3. MatchOdds Endpoints
-HTTP Method	    Endpoint	          Description
-GET	          /api/match-odds	      Get all odds
-POST	        /api/match-odds	      Create new odds
-PUT	          /api/match-odds/{id}	Update existing odds
-DELETE	      /api/match-odds/{id}	Delete odds by ID
+### REST API Endpoints
+
+#### Match API
+| HTTP Method | Endpoint            | Description                |
+|-------------|---------------------|----------------------------|
+| GET         | `/api/matches`      | Get all matches            |
+| POST        | `/api/matches`      | Create a new match         |
+| PUT         | `/api/matches/{id}` | Update an existing match   |
+| DELETE      | `/api/matches/{id}` | Delete a match by ID       |
+
+#### MatchOdds API
+| HTTP Method | Endpoint               | Description                |
+|-------------|------------------------|----------------------------|
+| GET         | `/api/match-odds`      | Get all odds               |
+| POST        | `/api/match-odds`      | Create new odds            |
+| PUT         | `/api/match-odds/{id}` | Update existing odds       |
+| DELETE      | `/api/match-odds/{id}` | Delete odds by ID          |
+
