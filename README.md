@@ -43,19 +43,24 @@ Build and start the application and database containers: `docker-compose up --bu
 Once you run the application, open your browser and navigate to:
 - Swagger UI: http://localhost:8080/swagger-ui.html
 ## Samples
-`{
+
+### Create a Match
+```json
+{
   "description": "Aris vs Paok",
   "matchDate": "2025-01-28",
   "matchTime": "16:30:00",
   "teamA": "ARIS",
   "teamB": "PAOK",
   "sport": "1"
-}`
-`{
+}
+```
+### Create a Match-odd
+```json
+{
   "match": {
     "id": 1
   },
   "specifier": "2",
   "odd": 1.9
-}`
-
+}
