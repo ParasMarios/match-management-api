@@ -27,6 +27,12 @@ public class MatchOddsController {
         return matchOddsService.saveOdds(matchOdds);
     }
 
+    @PutMapping("/{id}")
+    public MatchOdds updateOdds(@PathVariable Long id, @RequestBody MatchOdds matchOdds) {
+        matchOdds.setId(id);
+        return matchOddsService.saveOdds(matchOdds);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteOdds(@PathVariable Long id) {
         matchOddsService.deleteOdds(id);

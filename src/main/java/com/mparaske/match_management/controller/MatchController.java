@@ -27,6 +27,12 @@ public class MatchController {
         return matchService.saveMatch(match);
     }
 
+    @PutMapping("/{id}")
+    public Match updateMatch(@PathVariable Long id, @RequestBody Match match) {
+        match.setId(id);
+        return matchService.saveMatch(match);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteMatch(@PathVariable Long id) {
         matchService.deleteMatch(id);
